@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qviz"
+    tools:context=".SecondQuestion">
+    <!--
+    On va encore une fois utiliser RelativeLayout.
+    L'explication de RelativeLayout a été réalisée
+    au niveau du fichier XML activity_first_question.xml
+     -->
+    <!--
+    On va utiliser les deux attributs layout_width et
+    layout_height.
+    pour layout_width, on va lui attribuer la valeur
+    match_parent. Il va donc s'étendre en largeur
+    jusqu'à ce que sa taille devienne égal à la taille
+    de son parent.
+    On va utiliser l'attribut gravity avec la valeur center
+    afin de centrer la vue par rapport à son parent.
+    android:textColor=@color/yellow va permettre
+    de changer la couleur au jaune.
+    android:text va permettre d'affecter un texte
+    à la TextView.
+    android:textSize va permettre de changer la taille
+    du texte.
+    android:id="@+id/secondQuestion" va permettre
+    d'affecter l'id secondQuestion à la TextView.
+    android:layout_marginTop="80dp" va permettre
+    de donner à la marge supérieur la valeur 80dp.
+     -->
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Score : "
+        android:textColor="@color/yellow">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="240dp"
+        android:id="@+id/timer">
+    </TextView>
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:text="💡"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"></TextView>
+    <TextView
+        android:id="@+id/secondQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Question 2"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"></TextView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/yellow"
+        android:text="Which one of these programming languages is used by Android Studio ?"
+        android:id="@+id/theQuestion2"
+        android:layout_below="@+id/secondQuestion"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp">
+    </TextView>
+<!--
+android:layout_width au niveau de cette textview
+va prendre une valeur numérique.
+android:layout_height="wrap_content" va permettre
+de couvrir le contenu de la vue seuleument.
+android:layout_centerHorizontal="true" va permettre
+de centrer la vue horizontalement par rapport à son
+parent.
+ android:id="@+id/theQuestion2" va attribuer l'id
+ theQuestion2 à la TextView.
+ android:layout_below="@+id/secondQuestion" va permettre
+ de placer cette TextView en bas relativement par rapport
+ à la vue avec l'identifiant secondQuestion.
+ android:textSize va permettre de changer la taille
+ du texte
+ android:layout_marginTop="30dp" va permettre de
+ donner à la marge supérieure la valeur 30dp-->
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/theQuestion2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <!--
+         Une scrollview est un conteneur qui permet
+         défiler un ensemble de vues et d'éléments.
+         Ces éléments sont contenus dans
+         la vue scrollview.
+         Il existe deux types de scrollview:
+         -Une scrollview verticale définie par
+         <ScrollView>
+         -Une scrollview horizontale définie par
+         <HorizontalScrollview>
+          Les scrollviews interviennent lorsque
+         l'espace présent dans l'écran n'est pas
+         suffisant afin d'afficher l'ensemble
+         des composants et des vues.
+         Dans notre cas, on utilise une scrollview
+         horizontale qui est un conteneur renfermant
+         un ensemble de vues qui seront défilés
+         horizontalement.
+         android:id="@+id/scrollview" va nous permettre
+         d'attribuer l'identifiant scrollview
+         à la vue HorizontalScrollView.
+        android:layout_width="200dp" va permettre
+        de définir la largeur de l'élément à partir
+        d'une valeur numérique
+        android:layout_height="50dp" va permettre
+        définir la hauteur de l'élément à partir
+        d'une valeur numérique.
+        android:layout_below="@+id/theQuestion2" va
+        permettre de placer la scrollView en dessous
+        de l'élément ayant l'identifiant theQuestion2
+        android:layout_centerHorizontal="true" va
+        nous permettre de centrer horizontalement
+        la scrollview par rapport à son parent.
+        android:layout_marginTop="40dp" va nous
+        permettre de donner la valeur 40dp à la marge
+         supérieure -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- On va maintenant utiliser linearlayout
+            avec une orientation horizontale.
+            LinearLayout est imbriquée dans la vue
+            HorizontalScrollView
+            Ceci va nous permettre d'obtenir des éléments
+            alignés horizontalement au niveau de la
+            ScrollView
+            android:layout_width="match_parent"
+            va permettre d'étendre le layout en largeur
+            jusqu'à ce qu'il ait la taille de son
+            parent qui est le scrollview dans ce cas
+            android:layout_height:"wrap_content" va
+            permettre d'envelopper le contenu de la vue
+            en hauteur.
+            android:orientation="horizontal" va permettre
+            d'orienter les éléments horizontalement.
+            -->
+            <ImageButton
+                android:id="@+id/php"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/phpimg" />
+
+            <ImageButton
+                android:id="@+id/kotlin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/kotlinimg" />
+
+            <ImageButton
+                android:id="@+id/js"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/jsimg" />
+
+            <ImageButton
+                android:id="@+id/python"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pythonimg" />
+
+            <ImageButton
+                android:id="@+id/r"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rpng" />
+
+            <ImageButton
+                android:id="@+id/scala"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/scalapng"
+
+                />
+            <!-- On va réaliser la création de 6 composants
+            ImageButton qui auront tous les mêmes attributs
+            sauf le background el l'identifiant.
+            chacun d'eux contiendra une image du dossier
+            drawable.
+            les éléments auront la valeur 50dp pour
+            le layout_width et layout_height.
+            On va aussi définir une marge à la droite de chaque
+            élément afin de créer un espace entre les différents
+            ImageButtons(android:layout_marginRight="10dp")
+            -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/goodAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:layout_centerHorizontal="true"
+        android:text="Perfect !"
+        android:textColor="@color/yellow"
+        android:textSize="70sp"
+        android:visibility="invisible"></TextView>
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goodAnswer"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/yellow"
+        android:text="Next Question"
+        android:textColor="@color/black"
+        android:visibility="invisible"></Button>
+
+    <TextView
+        android:id="@+id/wrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Wrong Answer !"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+    <!-- Les 2 textviews suivants ainsi que le bouton
+    ont été définis au niveau fichier activity_first_question.xml
+    Il y a juste eu une petite différence
+    par rapport à leurs définition au niveau du
+     fichier activity_first_question.xml.
+    On a changé la valeur de l'attribut layout_below
+    à scrollView dans les deux TextViews ainsi elles
+    seront toutes les deux positionnées en dessous
+    de la vue ScrollView.-->
+</RelativeLayout>

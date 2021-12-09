@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizstart">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizStart">
+        <activity
+            android:name=".FourthHint"
+            android:exported="true" />
+        <activity
+            android:name=".ThirdHint"
+            android:exported="true" />
+        <activity
+            android:name=".SecondHint"
+            android:exported="true" />
+        <activity
+            android:name=".FirstHint"
+            android:exported="true" />
+        <activity
+            android:name=".FourthQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".ThirdQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".SecondQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".Rank"
+            android:exported="true" />
+        <activity
+            android:name=".FirstQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".Success"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizStart</string>
+    <string name="lien">Learn more about android programming languages at \n <a href="https://www.geeksforgeeks.org/top-programming-languages-for-android-app-development/">GeeksForGeeks.com</a></string>
+    <string name="lien1">Learn more about android versions at \n <a href="https://fr.wikipedia.org/wiki/Historique_des_versions_d%27Android">Wikipedia.com</a></string>
+    <string name="lien2">Learn more about LinearLayout \n <a href="https://developer.android.com/reference/android/widget/LinearLayout">Developer.android.com</a></string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--On spécifie la version du document XML (version 1.0).-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        android:fromYDelta="1500%"
+        android:repeatCount="0"
+        android:duration="2000"
+        />
+    <!-- la balise translate va permettre d’effectuer une animation de
+    translation suivant l’axe vertical (fromYDelta=1500%) qui va durer 2 secondes.-->
+</set>
+    <!--Puisqu’il s’agit d’une animation, le fichier doit commencer avec une balise set.
+    Set désigne un ensemble d’animations.-->

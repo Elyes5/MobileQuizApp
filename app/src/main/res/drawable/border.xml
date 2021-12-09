@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Comme tout fichier XML, il faut au début spécifier
+la version de XML à utiliser
+(dans ce cas il s’agit de la version 1.0)
+ainsi que l’encodage des caractères (UTF-8).-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+<stroke
+    android:width="4dp"
+    android:color="@color/yellow"
+    />
+<!--Ensuite, on a utilisé la balise stroke
+qui va nous permettre de définir le style du « border »
+utilisé. A l’aide de l’attribut width
+on pourra définir l’épaisseur du « border » et à l’aide de
+l’attribut color, on pourra choisir une couleur pour
+le « border ».-->
+</shape>
+<!--La balise shape nous permet de définir la forme de
+la frontière du champ EditText
+(c'est-à-dire le « border »).
+On a choisi comme forme un rectangle à l’aide
+de android :shape="rectangle"
+(plusieurs formes sont offertes par Android Studio).-->

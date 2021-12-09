@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qviz">
+    <!-- Au niveau de cette interface on va utiliser LinearLayout
+    avec une orientation verticale pour obtenir des éléments
+    organisés verticalement.
+    L'orientation par défaut pour LinearLayout est horizontal
+    Il ya aussi eu l'ajout d'un background -->
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/lightbulb1" />
+    <!-- On va créer un élément ImageView. L’image
+    contenue dans l’ImageView est obtenue à
+    partir du dossier @drawable. Le fichier a le nom
+    thisyellow.
+On a associé un identifiant à cet élément
+pour pouvoir le référencer dans l’activité Success.
+Ensuite, on a utilisé layout_width="match_parent" afin de
+permettre à l’image d’occuper tout l’espace en
+largeur donné par son parent.
+Après cela, on a utilisé layout_height="96dp" pour
+définir la hauteur de l’élément.
+Puis, on a utilisé layout_gravity pour définir
+la gravité de la vue ou du layout par rapport à
+son parent.
+Enfin, il y a eu l’utilisation de layout_marginTop
+afin de définir l’espace supérieur entre l’ImageView
+et la vue.-->
+    <TextView
+        android:id="@+id/success1_text_view"
+        android:layout_width="292dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/yellow"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+<!-- On a défini les mêmes attributs utilisés pour l’ImageView,
+on a cependant changé les valeurs de ces attributs.
+On a aussi ajouté android :gravity="center"
+afin de centrer le texte au niveau de la vue.
+On a aussi ajusté la taille de l’écriture à 26sp
+afin que ça soit plus clair et
+à l’aide de android : textStyle="bold",
+on a mis le texte en gras.-->
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/success2_text_view"
+        android:text="Please wait ..."
+        android:textColor="@color/yellow"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+    <!-- On a encore une fois créé un élément TextView
+    similaire à l’élément TextView précédent. On a
+    ajusté les valeurs des attributs et on a
+    ajouté un attribut android : text afin de
+    spécifier le texte existant dans l’élément TextView.
+    Il y a aussi eu l'ajout d'un attribut textColor:@color/yellow
+    afin d'affecter une couleur au texte -->
+    <ProgressBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/determinateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        />
+    <!-- On va réaliser la création d'un élément progressBar
+    qui va nous afficher l'avancement du chargement de l'application
+    la valeur par défaut est égal à 0
+    La valeur du marginTop est égale à 20dp
+    -->
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="Start Quiz"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+    <!--
+    il ya eu la création d'un bouton, on a utilisé wrapcontent
+    au niveau du layout_width et du layout_height pour que
+    le conteneur s'étende au fur et à mesure que son
+    contenu grandisse.
+    On a attribué la valeur 20dp au margin_Top
+    On a aussi utilisé layout_gravity="center" afin de centrer
+    le bouton par rapport à la vue.
+    En plus de cela, on a changé la couleur du background du
+    bouton au jaune à l'aide de android:backgroundTint="@color/yellow"
+    On a enfin changé la couleur du texte présent dans le
+    bouton au noir à l'aide de android:textColor=@color/black
+     -->
+</LinearLayout>

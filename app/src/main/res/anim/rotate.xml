@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--On définit au début la version de XML que l’on va utiliser ainsi que l’encodage.-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Ensuite, à l’aide de la balise set on va désigner qu’il s’agit
+d’une animation ou d’un ensemble d’animation.-->
+<rotate
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:repeatCount="infinite"
+    android:duration="700"
+    android:pivotX="50%"
+    android:pivotY="50%"
+
+    />
+<!-- Après cela, on va utiliser la balise rotate afin de définir l’animation réalisée
+ qui est une rotation.
+On va ainsi réaliser une rotation de 0° à 360°
+( android :fromDegrees= "0" -> android :toDegrees="360") sur une durée 700ms
+(android :duration="700"). L’animation va se répéter indéfiniment
+(android : repeatCount="infinite"). Android : pivotX="50%" et Android : pivotY="50%"
+vont permettre de spécifier le point central de l’animation.-->
+
+</set>

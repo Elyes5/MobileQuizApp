@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861353774193",
+    "project_id": "quizstart-1f93a",
+    "storage_bucket": "quizstart-1f93a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861353774193:android:ca0af14652d08ed7e0dfd0",
+        "android_client_info": {
+          "package_name": "com.example.quizstart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861353774193-tp3glbnvt4quso0bo5ohqti9gpqfgnj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCubwKZpMfX7TVOElXuWDCym0tlA8wwVNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861353774193-tp3glbnvt4quso0bo5ohqti9gpqfgnj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

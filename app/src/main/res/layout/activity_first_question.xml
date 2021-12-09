@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qviz"
+    tools:context=".FirstQuestion">
+    <!-- On va définir une vue à l'aide de RelativeLayout.
+    RelativeLayout permet de positionner les éléments de
+    la vue les uns par rapport aux autres.
+    Les différents widgets seront ainsi reliés les uns aux autres.
+    On va aussi utiliser match_parent.
+    match_parent permet de rendre une vue aussi grande
+    que son parent.
+    Par exemple , dans ce cas on a utilisé
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    et donc ceci va permettre à la vue de s'étendre
+    en hauteur et en largeur jusqu'à avoir la même taille
+    que le parent.
+    on a aussi utilisé android:background afin de définir
+    une background à la vue.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:layout_marginTop="81dp"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/timer">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        android:text="💡"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"></TextView>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Score : 0"
+        android:textColor="@color/yellow">
+
+    </TextView>
+    <TextView
+        android:id="@+id/firstQuestion"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Question 1"
+        android:textColor="@color/yellow"></TextView>
+<!-- on va définir le premier élément de cette activité.
+C'est une TextView, elle a pour layout_width 270dp
+et pour layout_height wrap_content.
+la valeur du layout_width va permettre d'agrandir la
+textView en largeur.
+wrap_content va permettre de couvrir le contenu. Le
+conteneur sera adapté à la taille du contenu.
+On a ensuite utilisé layout_centerHorizontal afin
+de centrer horizontalement le fils par rapport à
+son parent.
+Puis, on a utilisé android:gravity="center".
+gravity va permettre de définir la manière avec laquelle
+le contenu sera placé dans le conteneur.
+Ici, le contenu est placé dans le centre.
+Après cela, on a utilisé android:text afin de définir
+le texte contenu  dans le bouton et on a aussi utilisé
+android:textColor afin de définir la couleur du texte.
+On a aussi affecté un id à cette textView.
+-->
+    <Button
+        android:id="@+id/firstButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/firstQuestion"
+        android:layout_alignLeft="@id/firstQuestion"
+        android:text="RelativeLayout displays child View elements in rows and columns"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/yellow"
+        android:textSize="9dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"></Button>
+<!--
+On a réalisé la création d'un bouton et on lui a affecté
+un id afin de le référencer plus tard au niveau du code java
+et aussi pouvoir l'utiliser comme position relative pour
+d'autres éléments.
+Ensuite, on a affecté une valeur numérique pour le
+layout_width et le layout_height.
+Puis, on a utilisé layout_below.
+layout_below va permettre de positionner une vue
+en dessous de la vue dont a donné l'id
+en paramètre.
+dans ce cas , on va positionner le bouton avec l'id
+first_button en dessous de la textView avec l'id
+firstQuestion.
+Après cela,on va layout_alignLeft.
+layout_alignLeft permet d'aligner la frontière gauche
+de la vue donné avec la frontière gauche de la vue
+dont on a donné l'id en paramètre.
+Dans ce cas, on va aligner la frontière gauche du
+bouton avec l'id firstQuestion avec la frontière gauche
+de la vue textView avec l'id firstQuestion.
+Ensuite, à l'aide d'android:text, on a ajouté un texte
+au niveau du bouton.
+On a défini une marge supérieur à l'aide de margin_Top
+et on a changé la couleur du background au jaune à l'aide
+de la android:backgroundTint="@color/yellow"
+On a aussi changé la taille du texte (9sp) à l'aide
+de android:textSize et on a désactivé la capitalisation
+des mots dans le bouton en utilisant
+android:textAllCaps="false".
+Enfin, On a changé la couleur du texte dans le bouton au
+noir à l'aide de android:textColor="@color/black".
+-->
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:textSize="9dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/firstQuestion"
+        android:layout_alignRight="@+id/firstQuestion"
+        android:text="RelativeLayout specifies how child views are positioned relative to each other "
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"></Button>
+<!-- On a conservé une grande partie des propriètés
+définies dans le bouton précédent. Cependant, on n'a
+plus la proprièté layout_alignLeft comme le bouton
+précédent. Elle a été changée à layout_alignRight.
+layout_alignRight permet d'aligner la frontière droite
+de la vue donné avec la frontière droite de la vue
+dont on a donné l'id en paramètre.
+On va ainsi aligner la frontière droite du
+bouton secondButton et la frontière droite de la
+TextView firstQuestion.
+On a aussi attribué un texte différent à celui du
+premier bouton.
+-->
+
+    <Button
+        android:id="@+id/thirdButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/firstButton"
+        android:layout_alignLeft="@id/firstButton"
+        android:layout_marginTop="30dp"
+        android:textSize="9dp"
+        android:text="Relative Layout positions each element using x and y values"
+        android:backgroundTint="@color/yellow"
+        android:textAllCaps="false"
+        android:textColor="@color/black"></Button>
+<!-- On conservera les mêmes attributs utilisés
+ pour le bouton avec l'id firstButton.
+Cependant, on changera les valeurs de quelques uns de
+ces attributs.
+Voici ainsi les changements réalisés:
+- On va changer la valeur du layout_marginTop à 30dp
+- On va changer la valeur du layout_alignLeft à
+@id/firstButton. Les frontières gauches des deux boutons
+seront donc alignées.
+-On va aussi changer la valeur de l'attribut layout_below
+à firstButton afin de positionner le bouton avec
+l'id thirdButton en dessous du bouton avec l'id
+firstButton.-->
+    <Button
+        android:id="@+id/fourthButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/secondButton"
+        android:textAllCaps="false"
+        android:layout_alignRight="@id/secondButton"
+        android:layout_marginTop="30dp"
+        android:textSize="9dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Relative Layout makes element align vertically"
+        android:textColor="@color/black"></Button>
+    <!-- On conservera les mêmes attributs utilisés
+ pour le bouton avec l'id secondButton.
+Cependant, on changera les valeurs de quelques uns de
+ces attributs.
+Voici ainsi les changements réalisés:
+- On va changer la valeur du layout_marginTop à 30dp
+- On va changer la valeur du layout_alignRight à
+@id/secondButton afin de positionner le bouton avec
+l'id fourthButton relativement par rapport au bouton avec
+l'id secondButton. Les frontières droites des deux boutons
+seront donc alignées.
+-On va aussi changer la valeur de l'attribut layout_below
+à secondButton afin de positionner le bouton avec
+l'id fourthButton en dessous du bouton avec l'id
+secondButton.-->
+    <TextView
+        android:id="@+id/theQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstQuestion"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="What is the role of RelativeLayout"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow" />
+<!--  On a créé une nouvelle TextView ayant pour id
+theQuestion.
+L'attribut layout_width a pour valeur match_parent
+afin qu'il puisse s'étendre et avoir ainsi la largeur
+de son parent
+L'attribut layout_height a pour valeur wrap_content.
+Ainsi, le contenu sera enveloppé au niveau de la hauteur.
+L'attribut layout_below a pour valeur la vue avec l'id
+firstQuestion.
+Donc la textView theQuestion sera positionnée en dessous
+de la TextView firstQuestion
+On va ensuite définir le marginTop (marge extérieur) et
+on va lui attribuer la valeur 30dp.
+Puis , l'attribut gravity qui aura pour valeur center
+va permettre de center le contenu au niveau de la vue.
+On va enfin attribuer un texte à la textView à l'aide
+d'android:text et on va le décapitaliser en utilisant
+android:textAllCaps="false". Après cela, la couleur du
+texte sera changée avec l'attribut textColor qui prend
+pour valeur @color/yellow c'est à dire une couleur jaune.
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourthButton"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Wrong Answer !"
+        android:textColor="@color/red"
+        android:id="@+id/wrongAnswer"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+<!-- Pour cette TextView on aura les mêmes layout_width,
+layout_height et gravity que la TextView précédente.
+On va positionner cette TextView en dessous du bouton
+fourthButton en utilisant layout_below="@id/fourthButton.
+On va affecter un texte à la TextView qui aura pour
+couleur le rouge(android:text="Wrong Answer" et
+android:textColor="@color/red").
+le texte sera en gras(android:textStyle="bold").
+On va aussi lui attribuer un id
+(android:text="Wrong Answer !")
+Et enfin, on va rendre la textView invisible à partir
+de l'attribut visibility qui prendra pour valeur
+invisible.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/thirdButton"
+        android:layout_centerHorizontal="true"
+        android:text="Perfect !"
+        android:textColor="@color/yellow"
+        android:textSize="70sp"
+        android:id="@+id/goodAnswer"
+        android:visibility="invisible"></TextView>
+    <!-- cette Textviwe aura les mêmes attributs que la
+    TextView wrongAnswer sauf le textStyle.
+    Les valeurs des attributs seront cependant modifiées.
+    Les attribut layout_width et layout_height
+     auront pour valeur  wrap_content ce qui veut dire
+     que le conteneur va envelopper le contenu en
+     hauteur et en largeur c'est à dire que plus le
+     contenu est grand plus le conteneur s'étend.
+     Dans ce cas, l'utilisation de l'attribut gravity
+     devient inutile.
+     On va centrer la vue TextView par rapport à son
+     parent à l'aide de layout_centerHorizontal.
+     On utilisera aussi layout_above="@id/thirdButton"
+     pour que cette vue soit placée en dessus
+     du bouton thirdButton et on affectera un id
+     goodAnswer à cette vue.-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:layout_below="@id/goodAnswer"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/nextQuestion"
+        android:text="Next Question"
+        ></Button>
+    <!--
+    On va créer un bouton et on va lui attribuer
+    deux propriétés layout_width et layout_height
+    qui prendront pour valeur wrap_content.
+    La couleur du background sera jaune. cette couleur
+    sera affectée à l'aide de
+    android:backgroundTint="@color/yellow".
+    Le bouton sera invisible. On réalisera cela en
+    utilisant android:visibility="invisible".
+    Ce bouton sera centré dans la vue à l'aide de
+    layout_centerHorizontal="true"
+    La couleur du texte dans le bouton sera noire.
+    Cette configuration sera réalisée à l'aide
+    d'android:textColor="@color/black".
+    -->
+</RelativeLayout>

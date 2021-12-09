@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qviz">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score :"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="80dp"
+        android:id="@+id/score"
+        android:layout_marginLeft="60dp"></TextView>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="247dp"
+        android:layout_marginTop="-19dp"
+        android:text=""
+        android:textColor="@color/yellow"></TextView>
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="50dp"
+        android:clickable="true"
+        android:text="💡"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"></TextView>
+
+
+    <TextView
+        android:id="@+id/firstQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question 3"
+        android:textColor="@color/yellow"></TextView>
+
+    <TextView
+        android:id="@+id/theQuestion"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Which language is used to create hybrid apps?"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+            <RadioButton
+                android:id="@+id/Pascal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:buttonTint="@color/white"
+                android:checked="true"
+                android:layoutDirection="rtl"
+                android:text="Pascal           "
+                android:textColor="@color/yellow"
+
+                />
+            <RadioButton
+                android:id="@+id/React_Native"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:buttonTint="@color/white"
+                android:layoutDirection="rtl"
+                android:text="React Native"
+                android:textColor="@color/yellow" />
+            <RadioButton
+                android:id="@+id/Java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:buttonTint="@color/white"
+                android:layoutDirection="rtl"
+                android:text="Java              "
+                android:textColor="@color/yellow" />
+            <RadioButton
+                android:id="@+id/SQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:buttonTint="@color/white"
+                android:layoutDirection="rtl"
+                android:text="SQL               "
+                android:textColor="@color/yellow" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/goodAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="Perfect !"
+        android:textColor="@color/yellow"
+        android:textSize="70sp"
+        android:layout_marginTop="-110dp"
+        android:visibility="gone"></TextView>
+
+    <Button
+        android:id="@+id/nextQuestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="Next Question"
+        android:textColor="@color/black"
+        android:visibility="gone"></Button>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/yellow"
+        android:text="submit answer"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/wrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Wrong Answer !"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+</LinearLayout>

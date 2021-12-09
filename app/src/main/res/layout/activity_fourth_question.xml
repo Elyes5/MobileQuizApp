@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qviz">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="80dp"
+        android:id="@+id/score"
+        android:layout_marginLeft="60dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="260dp"
+        android:id="@+id/timer">
+    </TextView>
+    <TextView
+        android:id="@+id/firstQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question 4"
+        android:textColor="@color/yellow"></TextView>
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="-45dp"
+        android:clickable="true"
+        android:text="💡"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"></TextView>
+
+    <TextView
+        android:id="@+id/theQuestion"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Which ones represent android version names?"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="@color/yellow" />
+
+    <CheckBox
+        android:id="@+id/Oreo"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:layoutDirection="rtl"
+        android:text="Oreo             "
+        android:textColor="@color/yellow" />
+
+    <CheckBox
+        android:id="@+id/Iron"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:buttonTint="@color/white"
+        android:layoutDirection="rtl"
+        android:text="Iron         "
+        android:textColor="@color/yellow" />
+
+    <CheckBox
+        android:id="@+id/Kitkat"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:buttonTint="@color/white"
+        android:layoutDirection="rtl"
+        android:text="Kitkat           "
+        android:textColor="@color/yellow" />
+
+    <CheckBox
+        android:id="@+id/Gingerbread"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:buttonTint="@color/white"
+        android:layoutDirection="rtl"
+        android:text="Gingerbread"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/goodAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="Perfect !"
+        android:textColor="@color/yellow"
+        android:textSize="70sp"
+        android:layout_marginTop="-60dp"
+        android:visibility="gone"></TextView>
+
+    <Button
+        android:id="@+id/Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="Check Ranking"
+        android:textColor="@color/black"
+        android:visibility="gone"></Button>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/yellow"
+        android:text="submit answer"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/wrongAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Wrong Answer !"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+</LinearLayout>

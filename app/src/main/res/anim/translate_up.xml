@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--On définit au début la version de XML que l’on va utiliser ainsi que l’encodage.-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- On va utiliser la balise set pour dire qu'il s'agit d'une animation -->
+    <translate
+        android:toYDelta="-3000%"
+        android:repeatCount="0"
+        android:duration="2000"
+        />
+<!-- on va réaliser une translation de la position initiale vers une position
+YDelta=-3000%. L'objet fera une translation vers le haut et ne sera plus visible
+au niveau de l'interface graphique. Cette animation ne sera réalisée qu'une seule fois
+(android:repeatCount="0") et sa durée est de 2 secondes.-->
+</set>

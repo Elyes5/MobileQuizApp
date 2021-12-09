@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qviz">
+    tools:context=".MainActivity">
+<!--Dans notre cas, on n’a pas choisi l’orientation par
+défaut (horizontal).
+Elle a été personnalisée à l’aide de
+android : orientation ="vertical"
+Il y a aussi eu utilisation de
+android : layout_width="match_parent" et
+layout_height="match_parent" pour que la racine
+puisse s’étendre et ainsi occuper tout l’espace disponible.
+Tools :context=".MainActivity" va permettre de définir
+l’activité qui va permettre à l’utilisateur d’obtenir
+son Layout.
+-->
+    <TextView
+        android:id="@+id/main_textview_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome ! What's your name ? "
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="85dp"
+        android:padding="8dp"
+        android:textColor="@color/yellow"
+/>
+<!--L’ensemble des attributs ainsi que leurs valeurs ont été définies
+pour cet élément au niveau de l’énoncé du TP1.
+Cependant, il y a la modification et l'ajout de quelques-unes afin de les adapter
+au design de l’application.
+La valeur de layout_marginTop a pris la valeur 85dp.
+android:textColor=@color/yellow qui permet de changer
+la couleur du texte au jaune.
+-->
+    <EditText
+        android:id="@+id/main_edittext_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:hint="Please type your name"
+        android:padding="8dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/yellow"
+
+        />
+<!--Comme pour la l’élément TextView précédent,
+on a conservé l’ensemble des valeurs des
+attributs disponibles au niveau de l’énoncé TP1.
+Cependant, on a ajusté la valeur du layout_marginTop
+sur 30dp et on ajouté un attribut
+textColorHint et un attribut textColor
+afin de changer la couleur du placeholder existant
+dans l'élément editText ainsi que la couleur du texte
+tapé dans le champ.
+On a aussi ajouté un background pour cet élément.
+Le background consiste en l’ajout d’un « border »
+ pour l’élément.
+-->
+    <Button
+        android:id="@+id/main_button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Let's play"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        />
+    <!--On a conservé l’ensemble des paramètres du bouton
+    définie au niveau du TP1 sauf le layout_margin.
+    Dans notre cas, Il y a eu
+    le changement de la valeur du marginTop à 40dp.
+    Il y a aussi eu l'ajout d'un attribut backgroundTint
+    afin de définir la couleur du background button
+    ainsi qu'un attribut textColor permettant
+    de définir la couleur du texte du bouton.-->
+
+    <TextView
+        android:id="@+id/main_textview_ctrl"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:text=""
+        android:textColor="#E3FF0303" />
+    <!-- Cette TextView a été créée afin de réaliser
+    le contrôle de saisie. Elle va afficher
+    à l’utilisateur les erreurs auxquelles il fera face
+    s’il saisit dans le champ EditText des valeurs invalides
+    par rapport à ce qui est proposé dans l’application
+    c'est-à-dire son nom.-->
+
+</LinearLayout>

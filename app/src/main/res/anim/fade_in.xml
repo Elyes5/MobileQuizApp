@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- On va spécifier la version de XML utilisée ainsi que l’encodage (UTF-8) -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<alpha
+    android:fromAlpha="0"
+    android:duration="2000"
+    android:toAlpha="1"
+    />
+<!-- Puis, la balise alpha a été créée, cette balise permettre de changer
+l’opacité de l’élément de 0 à 1 sur une durée de 1 seconde.-->
+</set>
+<!-- on va créer une balise set qui désigne une animation ou un ensemble d’animations. -->

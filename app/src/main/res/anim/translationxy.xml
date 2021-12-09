@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--On définit au début la version de XML que l’on va utiliser ainsi que l’encodage.-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- On va utiliser la balise set pour dire qu'il s'agit d'une animation -->
+    <translate
+        android:toXDelta="180%"
+        android:repeatCount="0"
+        android:duration="2000"
+        />
+    <!-- On va réaliser une translation à droite , l'élément qui fera la translation
+    ne sera plus visible au niveau de l'interface. La vue va faire une translation
+    de sa position initiale à la position XDelta="180%". La durée de l'animation est
+    de 2 secondes(android:duration="2000").
+    Elle ne se réalisera qu'une fois (android:repeatCount="0")-->
+</set>
